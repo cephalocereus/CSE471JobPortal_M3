@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Registration</title>
+</head>
+<body>
+  <h1>Register User</h1>
+
+  <button id="registerBtn">Register</button>
+
+  <!-- Your script goes here -->
+  <script>
+    async function register() {
+      try {
+        const response = await fetch("http://localhost:8000/api/auth/register", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            name: "Alice",
+            email: "alice@example.com",
+            password: "12345678",
+            role: "applicant"
+          }),
+          credentials: "include"
+        });
+
+        const data = await response.json();
+        console.log("Response:", data);
+        alert(JSON.stringify(data));
+      } catch (err) {
+        console.error("Error:"

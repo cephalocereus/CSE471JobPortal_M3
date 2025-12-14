@@ -1,0 +1,387 @@
+.profile-page {
+  background: #f5f6fb;
+  min-height: 100vh;
+  color: #1f1f2e;
+}
+
+.profile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: linear-gradient(90deg, #6973e5, #8f5de7);
+  color: #fff;
+}
+
+.profile-brand h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.profile-actions .welcome-text {
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-logout {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary {
+  background: #5a6de8;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(90, 109, 232, 0.35);
+}
+
+.btn-secondary {
+  background: #eef1ff;
+  color: #4a4f97;
+}
+
+.btn-logout {
+  background: #fff;
+  color: #d14c5a;
+  border: 1px solid #f1c7cd;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-logout:hover {
+  transform: translateY(-1px);
+}
+
+.btn-link {
+  background: transparent;
+  border: none;
+  color: #5a6de8;
+  font-weight: 600;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.profile-hero {
+  padding: 24px;
+}
+
+.profile-card {
+  background: linear-gradient(120deg, #6d75e0, #8b5ce8);
+  color: #fff;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 12px 28px rgba(62, 66, 146, 0.25);
+  min-height: 230px;
+}
+
+.profile-card.compact {
+  margin-top: 16px;
+  background: #fff;
+  color: #2a2a3c;
+  border: 1px solid #e6e8f5;
+}
+
+.profile-top {
+  display: grid;
+  grid-template-columns: 120px 1fr 220px;
+  gap: 20px;
+  align-items: center;
+}
+
+.avatar-wrapper {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  font-size: 32px;
+}
+
+.profile-info h2 {
+  margin: 0 0 6px 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.profile-info p {
+  margin: 6px 0;
+}
+
+.muted {
+  color: #f4f6ff;
+  opacity: 1;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.value {
+  font-weight: 600;
+  color: #fff;
+}
+
+.profile-quick-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.upload-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.hidden-input {
+  display: none;
+}
+
+.icon-btn {
+  background: #f8f8ff;
+  border: 1px solid #e4e6f8;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.icon-row {
+  display: flex;
+  gap: 10px;
+}
+
+.applications-section {
+  padding: 10px 24px 32px 24px;
+}
+
+.company-list-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #e6e8f5;
+  box-shadow: 0 8px 18px rgba(26, 29, 72, 0.06);
+}
+
+.company-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.company-filter {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d9ddf7;
+}
+
+.company-table {
+  width: 100%;
+}
+
+.company-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 180px 180px;
+  align-items: center;
+  padding: 12px 8px;
+  border-bottom: 1px solid #f0f1f8;
+}
+
+.company-row.head {
+  font-weight: 700;
+  color: #4a4f97;
+  background: #f7f8ff;
+}
+
+.company-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-analytics {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  transition: all 0.3s;
+}
+
+.btn-analytics:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.company-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #e6e8f5;
+}
+
+.company-logo.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef1ff;
+  color: #4a4f97;
+}
+
+.applications-section h3 {
+  margin: 16px 0;
+  color: #2c2f50;
+}
+
+.applications-table {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e6e8f5;
+  overflow: hidden;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1.4fr 1.4fr 1fr;
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f1f8;
+  align-items: center;
+}
+
+.table-head {
+  background: #f7f8ff;
+  font-weight: 700;
+  color: #4a4f97;
+}
+
+.empty-row {
+  color: #9aa0c1;
+  text-align: center;
+}
+
+.status-pill {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.status-pill.pending {
+  background: #fff4de;
+  color: #d3922b;
+}
+
+.status-pill.accepted {
+  background: #e8fff4;
+  color: #2c9f6b;
+}
+
+.status-pill.rejected {
+  background: #ffe7e7;
+  color: #d14c5a;
+}
+
+.edit-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #e6e8f5;
+  box-shadow: 0 10px 24px rgba(26, 29, 72, 0.08);
+}
+
+.edit-card h2 {
+  margin-top: 0;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-row input,
+.form-row textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #d9ddf7;
+  outline: none;
+  font-size: 14px;
+}
+
+.upload-box {
+  border: 1px dashed #cfd4ff;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.avatar-preview {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #e6e8f5;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+@media (max-width: 960px) {
+  .profile-top {
+    grid-template-columns: 1fr;
+  }
+  .profile-card {
+    padding: 18px;
+  }
+  .profile-actions {
+    flex-wrap: wrap;
+  }
+  .applications-section {
+    padding: 0 12px 24px 12px;
+  }
+}
+
